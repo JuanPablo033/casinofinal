@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grzmikuj Kasyno</title>
+    <link rel="stylesheet" href="spinnerbetafinalfinalrealfinal.css">
+    <link rel="shortcut icon" href="https://i.postimg.cc/t4XZRZc2/seven-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+    <div id="baner">
+        <img id="logo" src="ok.jpeg" alt="">
+    </div>
+        <div id="sda">
+        <a href="#">Automaty</a>
+        <a href="#">Live Casino</a>
+        <a href="#">Promocje</a>
+        <a href="#">Turnieje</a>
+       
+        <form id="form"> 
+            <input type="search" id="query" name="q" placeholder="Search...">
+            <button>Search</button>
+          </form>
+        </div>
+    </nav>
+
+    <div id="obraz">
+        <div class="mid">
+            <div class="automat">
+                <div class="emptyvertical"></div>
+                <div class="sl">
+                    <img class="slot" id="slot1" src="" alt="">
+                </div>
+                <div class="emptyvertical"></div>
+                <div class="sm">
+                    <img class="slot" id="slot2" src="" alt="">
+                </div>
+                <div class="emptyvertical"></div>
+                <div class="sr">
+                    <img class="slot" id="slot3" src="" alt="">
+                </div>
+                <div class="emptyvertical"></div>
+            </div>
+            <div class="btn">
+                <button onclick="spin()">Zakręć</button>
+            </div>
+            <div id="result">
+                <script>
+                    const images = [
+                        {src: 'https://cdn3.iconfinder.com/data/icons/slot-machine-symbols-filled-outline/256/strawberry-512.png?text=1', points: 10},
+                        {src: 'https://i.postimg.cc/Bb9W27qQ/pomarancza-removebg-preview.png', points: 20},
+                        {src: 'https://i.postimg.cc/t4XZRZc2/seven-removebg-preview.png', points: 30},
+                        {src: 'https://i.postimg.cc/d38b6R1R/tysi-removebg-preview.png', points: 50}
+                    ];
+            
+                    function spin() {
+                        const slot1 = images[Math.floor(Math.random() * images.length)];
+                        const slot2 = images[Math.floor(Math.random() * images.length)];
+                        const slot3 = images[Math.floor(Math.random() * images.length)];
+            
+                        document.getElementById('slot1').src = slot1.src;
+                        document.getElementById('slot2').src = slot2.src;
+                        document.getElementById('slot3').src = slot3.src;
+            
+                        let totalPoints = slot1.points + slot2.points + slot3.points;
+                        let jackpot = false;
+            
+                        if (slot1.src === slot2.src && slot2.src === slot3.src) {
+                            jackpot = true;
+                            document.getElementById('result').innerText = "JACKPOT!";
+                            totalPoints *= 10; // Multiply jackpot points by 10
+                        } else {
+                            document.getElementById('result').innerText = "Spróbuj ponownie.";
+                        }
+            
+                        document.getElementById('result').innerHTML += `<br>Twoja wygrana: ${totalPoints} punktów!`;
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <div id="szyb-dos">
+        <a href="str-glowna.html">
+            Strona Główna
+        </a>
+        <a href="skrzynki.html">
+            Skrzynki
+        </a>
+        <a href="black.html">
+            Blackjack
+        </a>
+    </div>
+    <section class="gry">
+        <div class="gametitle">
+            <h2>
+                Wszystkie gry
+            </h2>
+        </div>
+        <div class="gamecontainer">
+            <div class="card">
+                <a href="ik">
+                    <img src="ikona gry typu slotsy.jpg" alt="">
+                </a>
+            </div>
+            <div class="card">
+                <a href="">
+                    <img src="ikona gry typu Black jack bardzo kolorowe.jpg" alt="">
+                </a>
+            </div>
+            <div class="card">
+                <a href="">
+                    <img src="ikona gry gdzie będzie otwarta walizka, obok złoty dym a nad nią unosi się znak zapytania który ma mityczną poświatę, za nią ma być ciemno.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

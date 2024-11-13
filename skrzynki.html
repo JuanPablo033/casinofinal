@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gra w Otwieranie Skrzynek</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <nav>
+        <div id="baner">
+            <img id="logo" src="ok.jpeg" alt="Logo">
+        </div>
+        <div id="sda">
+            <a href="#">Skrzynki</a>
+            <a href="#">Nagrody</a>
+            <a href="#">Zasady</a>
+            <a href="#">Ranking</a>
+            <form id="form">
+                <input type="search" id="query" name="q" placeholder="Szukaj...">
+                <button>Wyszukaj</button>
+            </form>
+        </div>
+    </nav>
+
+    <div id="obraz">
+        <div class="mid">
+            <h1>Otwórz Skrzynkę</h1>
+            <div id="box" class="box" onclick="openBox()">
+                <img src="skrzynka.jpg" alt="Skrzynka" id="boxImage">
+                <span id="label">Kliknij, aby otworzyć skrzynkę</span>
+            </div>
+            <div id="result" class="result"></div>
+        </div>
+    </div>
+
+    <div id="szyb-dos">
+        <a href="#">Strona Główna</a>
+        <a href="#">Popularne</a>
+        <a href="#">Nowe</a>
+        <a href="#">Specjalne</a>
+        <a href="#">Nagrody</a>
+        <a href="#">Ranking</a>
+    </div>
+
+    <section class="winnings">
+        <div class="winnings-title">
+            <h2>Wygrane</h2>
+        </div>
+        <div class="winnings-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Wygrana</th>
+                    </tr>
+                </thead>
+                <tbody id="winningsTable">
+                </tbody>
+            </table>
+            <p>Pozostałe otwarcia: <span id="opensRemaining">5</span></p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

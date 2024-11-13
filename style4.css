@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Ogólne stylizacje */
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(23,1,13);
+    color: #fff;
+    border-bottom: 2px solid salmon;
+}
+
+#baner {
+    display: flex;
+    align-items: center;
+    border-right: 2px salmon solid;
+}
+
+.mid {
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(57, 6, 34);
+    border-bottom: 2px solid salmon;
+}
+
+#box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    cursor: pointer;
+}
+
+#box img {
+    width: 20rem;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid salmon;
+    filter: drop-shadow(0px 0px 10px white);
+    transition: 0.5s;
+}
+
+#box img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#label {
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+#result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+}
+
+#logo {
+    height: 100px;
+}
+
+#sda {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#sda a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+#sda a:hover {
+    background-color: rgb(170,3,47);
+    border-radius: 5px;
+}
+
+#form {
+    display: flex;
+    align-items: center;
+}
+
+#query {
+    padding: 8px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+}
+
+#form button {
+    padding: 8px 15px;
+    border: none;
+    background-color: rgb(170,3,47);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s;
+}
+
+#form button:hover {
+    background-color: rgb(219, 17, 71);
+}
+
+/* Szybkie dostępy */
+#szyb-dos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    background-color: rgb(170,3,47);
+    padding: 15px;
+}
+
+#szyb-dos a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: rgb(229,183,97);
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#szyb-dos a:hover {
+    background-color: #ee3b62;
+}
+
+/* Wygrane */
+.winnings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(90deg, rgba(207,0,34,1) 0%, rgba(121,226,175,0) 50%, rgba(66,0,255,1) 100%);
+}
+
+.winnings-title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.winnings-title h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.winnings-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}
+
+p {
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+}

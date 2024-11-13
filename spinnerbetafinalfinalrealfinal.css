@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+/* Ogólne stylizacje */
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(23,1,13);
+    color: #fff;
+    border-bottom: 2px solid salmon;
+}
+
+#baner {
+    display: flex;
+    align-items: center;
+    border-right: 2px salmon solid;
+}
+.mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(57, 6, 34);
+    border-bottom: 2px solid salmon;
+}
+.automat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+}
+.sl, .sm, .sr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+.emptyvertical {
+    display: flex;
+    height: 100%;
+    width: 10%;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+}
+.btn > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 5vh;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    /* animation: customAni 3s ease 0s infinite normal none; */
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid salmon;
+    filter: drop-shadow(0px 0px 5px  white);
+    transition: 0.5s;
+}
+.btn > button:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.slot {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+#result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    font-size: 20px;
+    color: white;
+}
+
+#logo {
+    height: 100px;
+}
+
+#sda {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+#sda a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+    
+}
+
+#sda a:hover {
+    background-color: rgb(170,3,47);
+    border-radius: 5px;
+}
+
+#form {
+    display: flex;
+    align-items: center;
+}
+
+#query {
+    padding: 8px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+}
+
+#form button {
+    padding: 8px 15px;
+    border: none;
+    background-color: rgb(170,3,47);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s;
+}
+
+#form button:hover {
+    background-color: rgb(219, 17, 71);
+}
+
+/* Stylizacja głównego bannera */
+#obraz {
+    display: flex;
+    justify-content: center;
+}
+
+#banner {
+    height: 600px;
+    width: 100%;
+}
+
+/* Szybkie dostępy */
+#szyb-dos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    background-color: rgb(170,3,47);
+    padding: 15px;
+}
+
+#szyb-dos a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: rgb(229,183,97);
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 10rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+#szyb-dos a:hover {
+    background-color: #ee3b62;
+}
+.gry {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(90deg, rgba(207,0,34,1) 0%, rgba(121,226,175,0) 50%, rgba(66,0,255,1) 100%);
+}
+.gametitle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+.gametitle h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.gamecontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+.card > a {
+    display: flex;
+}
+.card > a > img {
+    display: flex;
+    width: auto;
+    height: 25vh;
+    border-radius: 24px;
+    transition: 0.5s;
+    filter: drop-shadow(0px 0px 20px  black);
+}
+.card > a > img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+@keyframes customAni {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(1.1);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  
